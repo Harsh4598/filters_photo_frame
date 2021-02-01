@@ -32,6 +32,7 @@ class _MyAppState extends State<MyApp> {
           appBarColor: Color(0xFF30110D),
           textColor: Color(0xFFF722620),
           borderColor: Color(0xFFF2BC94),
+          appBarIconColor: Color(0xFFF2BC94),
           title: Text("Photo Filter Example"),
           image: image,
           filters: presetFiltersList,

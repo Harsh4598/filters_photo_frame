@@ -58,6 +58,7 @@ class PhotoFilterSelector extends StatefulWidget {
   final Color backgroundColor;
   final Color borderColor;
   final Color textColor;
+  final Color appBarIconColor;
   final List<Filter> filters;
   final imageLib.Image image;
   final Widget loader;
@@ -81,6 +82,7 @@ class PhotoFilterSelector extends StatefulWidget {
     this.backgroundColor = Colors.white,
     this.borderColor = Colors.white,
     this.textColor = Colors.blue,
+    this.appBarIconColor = Colors.white,
   }) : super(key: key);
 
   @override
@@ -122,7 +124,10 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
           centerTitle: true,
           actions: <Widget>[
             IconButton(
-                icon: Icon(Icons.check),
+                icon: Icon(
+                  Icons.check,
+                  color: widget.appBarIconColor,
+                ),
                 onPressed: () async {
                   var imageFile = await saveFilteredImage();
 
