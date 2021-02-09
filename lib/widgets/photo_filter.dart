@@ -145,7 +145,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
-                      flex: 11,
+                      flex: 12,
                       child: Container(
                         width: double.infinity,
                         height: double.infinity,
@@ -163,7 +163,7 @@ class _PhotoFilterSelectorState extends State<PhotoFilterSelector> {
                       ),
                     ),
                     Expanded(
-                      flex: 3,
+                      flex: 4,
                       child: Container(
                         color: widget.appBarColor,
                         child: Center(
